@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML5</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <header>머릿말 (발단, 서론)</header>
+        <div>
+            <nav>네비게이션</nav>
+            <section>
+                <h1>구획 제목</h1>
+                <article>뉴스, 기사글, 블로그내용</article>
+                <div></div>
+            </section>
+            <aside>광고나, 연관물, 관계없는 정보</aside>
+        </div>
+        <footer>맺음말 (결말, 결론)</footer>
+
+        <style>
+            #myCanvas{
+                width: 300px;
+                height: 150px;
+            }
+        </style>
+        <canvas id="myCanvas"></canvas>
+
+        <script>
+                var canvas = document.getElementById("myCanvas"); //myCanvas라는 이름의 canvas element를 받아옵니다.
+                var ctx = canvas.getContext("2d"); //2D canvas를 생성합니다.
+                ctx.fillStyle = "#FF0000"; //색을 지정합니다.
+                
+                ctx.fillRect(25, 25, 100, 100); //채움 사각형
+                ctx.clearRect(45, 45, 60, 60); //사각형태로 지우기
+                ctx.strokeRect(50, 50, 50, 50); //윤곽 사각형
+                
+                ctx.fillStyle = "#000000";
+                ctx.beginPath(); //선그리기 시작
+                ctx.moveTo(65, 75); //펜 들어 움직이기
+                ctx.lineTo(90, 95); //선 그으며 움직이기
+                ctx.lineTo(90, 55);
+                ctx.fill(); //내부 채우기
+                
+                ctx.beginPath();
+                ctx.arc(225, 75, 50, 0, Math.PI * 2, true); // Outer circle 
+                ctx.moveTo(260, 75);
+                ctx.arc(225, 75, 35, 0, Math.PI, false);  // Mouth (clockwise)
+                ctx.moveTo(215, 65);
+                ctx.arc(210, 65, 5, 0, Math.PI * 2, true);  // Left eye
+                ctx.moveTo(245, 65);
+                ctx.arc(240, 65, 5, 0, Math.PI * 2, true);  // Right eye
+                ctx.stroke();
+        </script>
+
+        <br>
+        <audio controls>
+            <source src="./media/relax.mp3" type="audio/mpeg" />
+        </audio>
+
+        <br>
+        <video width="320" height="240" controls>
+            <source src="./media/video.mp4" type="video/mp4" />
+        </video>
+        
+        <br>
+        <!-- form 양식지 -->
+        <form>
+            <input type="text" placeholder="아이디를 입력하세요." />
+            
+            <br>
+            <input type="password" placeholder="비밀번호를 입력하세요." /> 
+            <!-- placeholder : 텍스트가 없을때 설명글을 입력할 때 사용 -->
+
+            <br>
+            <!-- 라디오 버튼은 name이 중요합니다. 단일 선택 시 사용. 2개 이상일때 제 기능을 함. -->
+            <input type="radio" name="rd1" />
+            <input type="radio" name="rd1" />
+            <input type="radio" name="rd1" />
+
+            <input type="radio" name="rd2" />
+            <input type="radio" name="rd2" />
+            <input type="radio" name="rd2" />
+            <!-- name이 바뀌면 바뀐 name 안에서만 단일 선택 -->
+
+            <input type="checkbox" />
+            <input type="checkbox" />
+            <input type="checkbox" />
+            <!-- 다중 선택 가능 -->
+
+            <br>
+            <!-- 선택박스, 콤보박스 : 선택할 수 있는 보기를 제공. 직접 입력으로 인한 오류를 방지하기 위함.-->
+            <select>
+                <option>사이트 주소</option>
+                <option>www.naver.com</option>
+                <option>www.google.com</option>
+            </select>
+
+            <br>
+            <!-- 여러 줄의 문자열 -->
+            <!-- cols(가로 글자 수), rows(세로 줄 수) -->
+            <textarea cols="20" rows="3">
+
+            </textarea>
+
+            <input type="button" value="버튼" />
+            <input type="button" value="테스트버튼"
+            onclick="alert('테스트 버튼이 눌렸습니다.')" />
+
+            <input type="submit" value="제출" />
+
+        </form>
+        
+        <br>
+        <br>
+        <a href="index.html">돌아오기</a>
+
+    </body>
+</html>

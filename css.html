@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS</title>
+        <meta charset="utf-8">
+        <style>
+            b{ color: red; }
+            .c_name{ color: green; }
+            #i_name{ color: yellow; }
+            /* id(#)는 한 이름만 사용할 수 있음. */
+            p:before{ content:"★"; }
+            p:after{ content:"☆"; }
+            p:first-letter{ font-size: 100px; }
+            p::first-line{ color: pink; }
+
+            .li1:first-child{ color: red; }
+            .li1:last-child{ color: blue; }
+            .li1:nth-child(3){ color: violet; }
+            /* 1st, 2nd, 3th, 4th, 5th, ... nth */
+
+            /* :link - 기본, :visited - 방문 후, :hover - 마우스 올리면, :active - 눌렀을 때, :focus - 집중 */
+            a:link{ color: teal; }
+            a:visited{ color: turquoise; }
+            a:hover{ color: red; }
+            a:active{ color: yellow; }
+            a:focus{ color: olivedrab; }
+
+            div li{ color: green; }
+            /* 하위 선택자 : div 안에 있는 li */
+            /* 하위 선택자는 상하 관계만 구별해주면 됨. */
+
+            div>ul>li{ text-decoration: underline; }
+            /* 자식 선택자 : div의 자식(child) li */
+            /* 직속 부모, 자식 관계이어야 하기 때문에 자식선택자는 관계를 명확하게 구별해주어야 함. */
+
+        </style>
+    </head>
+
+    <body>
+        <b>내용</b>
+        <div class="c_name">클래스 선택자</div>
+        <div class="c_name">클래스 선택자1</div>
+        <div id="i_name">아이디 선택자</div>
+        <p>내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.</p>
+
+        <ul> <!-- parent, 부모 -->
+            <li class="li1">리스트1</li>
+            <!-- child, 자식 -->
+            <li class="li1">리스트2</li>
+            <li class="li1">리스트3</li>
+            <li class="li1">리스트3.1</li>
+            <li class="li1">리스트4</li>
+        </ul>
+
+        <a href="#">링크 버튼</a>
+
+        <div>
+            <ul>
+                <li>리스트1</li>
+                <li>리스트2</li>
+                <li>리스트3</li>
+                <li>리스트4</li>
+            </ul>
+        </div>
+
+        <br>
+        <br>
+        <a href="index.html">돌아오기</a>
+        
+    </body>
+</html>
