@@ -66,6 +66,117 @@
             </ul>
         </div>
 
+        <style>
+            #box_model,#inline_model{
+                background-color: gray;
+                width: 100px;
+                height: 100px;
+                margin: 30px; /* 바깥여백 */
+                border: solid 1px black; /* 경계선 : 실선 1픽셀의 두께 검은색 */
+                padding: 20px; /* 안쪽여백 */
+            }
+        </style>
+        <div id="box_model">박스모델</div>
+        <span id="inline_model">인라인모델</span>
+
+        <style>
+            #box2{
+                margin: 30px 20px 10px 5px;
+                /* 위 오른쪽 아래 왼쪽(시계방향으로 적용됨.) */
+                margin: 50px 20px;
+                /* 상하 좌우 */
+                margin-top: 30px;
+                margin-right: 20px;
+                margin-bottom: 10px;
+                margin-left: 50px;
+                /* padding, border도 동일하게 원하는 방향 지정할 수 있음. */
+            }
+        </style>
+        <div id="box2">방향별 여백</div>
+
+        <style>
+            .css_target{
+                color: blue;
+            }
+            #css_target{
+                color: red;
+            }
+        </style>
+        <div class="css_target" id="css_target" style="color: green;">겹침과 개별성</div>
+        <!-- 특정도 점수에 따라 강하고 약한 명령이 있기 때문에 겹치거나 우선시 되는 것을 유의. -->
+        
+        <style>
+            #color_sample{
+                color:black;
+                color: #000; /* 컬러코드 #rgb */
+                color: #000000; /* #rrggbb, 0~9 a~f */
+                color: rgb(0,0,255); /* 0~255 */
+                color: rgb(0%,0%,100%); /* 0%~100% */
+            }
+        </style>
+        <div id="color_sample">색상</div>
+
+        <style>
+            #position_target{
+                /* static, reltive, absolute, fixed */
+                position: static; /* 정적인 (기본) */
+                /* reltive 관계적 (위치지정가능) */
+                position: absolute; /* 절대적인 */
+                /* top right bottom left 위치지정가능 */
+                top: 50px;
+                left: 50px;
+                position: fixed; /* 고정형 */
+            }
+        </style>
+        <div id="position_target">position</div>
+
+        <style>
+            #font_target{
+                font-family: Algerian, "돋움", Dotum, "굴림", Gulim, sans-selif;
+                font-size: 30px;
+                font-weight: bold;
+                /* normal, light, bold, bolder */
+                /* 100, 200, 300, 400, 500 */
+                font-style: italic; /* 기울임꼴 */
+                font-variant: small-caps; /* 작은 대문자 표현 */
+                text-align: center; /* 글자 가운데로(inline형 태그에만 적용됨) */
+            }
+        </style>
+        font_family
+        <div id="font_target">font_family AbcdEfgHijkLm</div>
+
+        <style>
+            #line_target{
+                line-height: 50px; /* 줄 높이 지정 */
+                vertical-align: top; /* 상하정렬 : 상단 */
+                text-decoration: underline; /* 글자 꾸미기 : 밑줄 */
+                /* underline overline line-through */
+                letter-spacing: 10px; /* 자간(글자 사이의 간격) */
+                text-indent: 10px; /* 들여쓰기 */
+                text-transform: uppercase; /* 대문자로 표현하기 */
+                /* uppercase lowercase ... */
+                white-space: pre; /* 탭, 띄어쓰기, 엔터 모두 다 표현 */
+            }
+        </style>
+        <div id="line_target">
+            AbcdEfgHijkLm
+            content content                 content content content content content content 
+            content content content content content         content content content 
+
+
+            content content content content                 content content content content 
+        </div>
+
+        <style>
+            @import url('http://fonts.googleapis.com/earlyaccess/nanumpenscript.css');
+            @import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+            #google_font{
+                font-family: 'Nanum Pen Script', cursive;
+                font-family: 'roboto_mono', cursive;
+            }
+        </style>
+        google_font
+        <div id="google_font">google_font</div>
 
 
         <br>
