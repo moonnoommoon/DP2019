@@ -8,6 +8,15 @@
                 /* border: solid 1px black; */
                 /* margin: 15px; */
             }
+            body{
+                margin: 0px;
+            }
+            ul{
+                padding: 0px;
+            }
+            header{
+                padding: 30px;
+            }
             header>ul>li{
                 float: left; /* 왼쪽 기준으로 둥둥 떠다니게, 흐르듯이 배치 */
                 list-style: none; /* li 기본 표시(동그라미) 없음(none) */
@@ -51,8 +60,16 @@
             }
             #navigation {
                 background-color: #eee;
+                padding: 30px;
             }
-            h2 { margin: 0px; }
+            h2 { 
+                margin: 0px;
+                font-size: 30px;
+                color: #888;
+            }
+            #body>section{
+                padding: 50px;
+            }
             #body>section:nth-child(1) { background-color: #98f; }
             #body>section:nth-child(2) { background-color: #5d9; }
             #body>section:nth-child(3) { background-color: #f76; }
@@ -63,7 +80,11 @@
                 margin-right: auto;
                 /* 가로 길이 지정 후 left: auto, right: auto;하면 블록이 가운데로 이동함. */
             }
-            h3 { color: white; }
+            h3 { 
+                color: white;
+                font-weight: normal;
+                font-size: 30px;
+            }
             dd { margin: 0px; }
             .part {
                 float: left;
@@ -102,6 +123,15 @@
             }
             footer{
                 background-color: #333;
+                color: #ccc;
+                padding: 30px
+            }
+            #wrap{
+                min-width: 1200px; /* 최소 넓이: 1200px; 일정 이하의 사이즈로 줄어들면 깨질 수도 있는 것을 방지해줌.*/
+                max-width: 1920px; /* 최대 넓이: 1920px */
+                margin-left: auto;
+                margin-right: auto;
+                /* 양쪽여백 자동 = 가운데 정렬 */
             }
         </style>
     </head>
