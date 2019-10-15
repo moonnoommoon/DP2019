@@ -87,6 +87,22 @@
             footer #n_list li:nth-child(6){
                 border: none; /* li의 6번째 아이의 경계선은 없습니다. */
             }
+
+            footer ul>li{
+                float: left; /* 둥둥 떠다니게: 왼쪽 기준; */
+                list-style: none; /* 목록 모양(동그라미): 없음; */
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+            #footer_left{
+                float: left;
+            }
+            #i_list{
+                float: right;
+            }
+            footer{
+                background-color: #333;
+            }
         </style>
     </head>
     <body>
@@ -238,30 +254,33 @@
             </div>
             <footer>
                 <div>
-                    <ul id="n_list">
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Services</li>
-                        <li>Work</li>
-                        <li>Blog</li>
-                        <li>Contact us</li>
-                        <div class="clear"></div>
+                    <div id="footer_left">
+                        <ul id="n_list">
+                            <li>Home</li>
+                            <li>About</li>
+                            <li>Services</li>
+                            <li>Work</li>
+                            <li>Blog</li>
+                            <li>Contact us</li>
+                            <div class="clear"></div>
+                        </ul>
+                        <div>
+                                ⓒ 2013 BlueBox. All Right Reserved.
+                        </div>
+                        <div>
+                                the loges in the design are the property of their respective owners/copyright holders.
+                        </div>
+                    </div>
+                    <ul id="i_list">
+                        <li><img src="images/layout1_footer_icon1.png"></li>
+                        <li><img src="images/layout1_footer_icon2.png"></li>
+                        <li><img src="images/layout1_footer_icon3.png"></li>
+                        <li><img src="images/layout1_footer_icon4.png"></li>
+                        <li><img src="images/layout1_footer_icon5.png"></li>
+                        <li><img src="images/layout1_footer_icon6.png"></li>
                     </ul>
+                    <div class="clear"></div>
                 </div>
-                <div>
-                        ⓒ 2013 BlueBox. All Right Reserved.
-                </div>
-                <div>
-                        the loges in the design are the property of their respective owners/copyright holders.
-                </div>
-                <ul id="i_list">
-                    <li><img src="images/layout1_footer_icon1.png"></li>
-                    <li><img src="images/layout1_footer_icon2.png"></li>
-                    <li><img src="images/layout1_footer_icon3.png"></li>
-                    <li><img src="images/layout1_footer_icon4.png"></li>
-                    <li><img src="images/layout1_footer_icon5.png"></li>
-                    <li><img src="images/layout1_footer_icon6.png"></li>
-                </ul>
             </footer>
         </div>
         
