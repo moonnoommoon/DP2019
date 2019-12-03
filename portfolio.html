@@ -129,6 +129,19 @@
             */
 
         </style>
+        <script>
+            function set_func(str){
+                var all_classes = document.getElementsByClassName('card');
+                for(var j=0; j<all_classes.length ;j++){
+                    all_classes[j].classList.add("d_none");
+                }
+                var my_classes = document.getElementsByClassName(str);
+                //alert("my_classes.length:"+my_classes.length);
+                for(var i=0; i<my_classes.length; i++){
+                    my_classes[i].classList.remove("d_none");
+                }
+            }
+        </script>
     </head>
 
     <body>
@@ -141,11 +154,11 @@
                 <img src="images/pf-circles_002.png">
                 <nav>
                     <ul>
-                        <li onclick="alert('clicked')">Grapic Design</li>
-                        <li>3D Design</li>
-                        <li>Pakage Design</li>
-                        <li>Poster Design</li>
-                        <li>Album cover Design</li>
+                        <li onclick="set_func('c_gd')">Grapic Design</li>
+                        <li onclick="set_func('c_3d')">3D Design</li>
+                        <li onclick="set_func('c_pkd')">Pakage Design</li>
+                        <li onclick="set_func('c_ptd')">Poster Design</li>
+                        <li onclick="set_func('c_ad')">Album cover Design</li>
                         <li>
                             <div id="home">
                                     <a href="index_moon.html">
