@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PORTFOLIO</title>
+        <meta charset="utf-8">
+        <style>
+            body{
+                background-image: url("images/pf-bg.jpg");
+                margin: 0px;
+            }
+            header{
+                width: 170px;
+                position:fixed;
+                height: 100vh;
+                padding: 30px;
+                background-color: #313131;
+                color: white;
+            }
+            header>h1>img{
+                margin: 0px 0px 0px 20px;
+                width: 80px;
+                height: 80px;
+            }
+            header>img{
+                padding-left: 17px;
+            }
+            header>h2{
+                padding-left: 15px;
+            }
+            nav>ul>li{
+                list-style: none;
+                padding-right: 10px;
+                padding-bottom: 45px;
+            }
+            nav>ul>li:focus{ color: #cf7b75; }
+            nav>ul>li:hover{ color: #cf7b75; }
+            nav>ul{
+                margin-top: 45px;
+                padding-left: 40px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+            }
+            .clear{
+                clear: both;
+                height: 0px;
+                overflow: hidden;
+            }
+
+            #content{
+                padding-top: 50px;
+                padding-left: 60px;
+                margin-left: 250px;
+            }
+            .long_line{
+                width: 90px;
+                height: 0px;
+                border-bottom: solid 1px gray;
+            }
+            .image_part>div{
+                background-color: #cf7b75;
+                font-weight: bold;
+                color: black;
+                display: inline-block;
+                padding: 5px;
+
+                position: static;
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+            }
+            .image_part{
+                position: relative;
+            }
+            .image_part img{
+                display: block;
+            }
+            .card{
+                width: 310px;
+                background-color: black;
+                color: white;
+                border-right: solid 2px #ddd;
+                border-bottom: solid 2px #ddd;
+                margin: 0px 40px 40px 0px; 
+                float: left;
+            }
+            .card>h2{
+                margin: 0px;
+            }
+            .date{
+                margin: 8px 0px;
+            }
+            .info_part h2{
+                font-size: 20px;
+            }
+            .info_part{
+                font-size: 5px;
+                margin: 30px;
+            }
+
+            footer img{
+                margin-left: 5px;
+            }
+
+            .font_bold{
+                font-weight: bold;
+            }
+            footer div{
+                margin-top: 10px;
+                margin-bottom: 10px;    
+            }
+            footer{
+                text-align: right;
+                margin-right: 30px;
+            }
+            .d_block{
+                display: block;
+            }
+            .d_none{
+                display: none;
+            }
+            
+            /* 
+            grapic design : c_gd
+            3D design : c_3d
+            Pakage design : c_pkd
+            Poster design : c_ptd
+            Album cover design : c_ad
+            */
+
+        </style>
+    </head>
+
+    <body>
+        <div id="wrap">
+            <header>
+                <h1 class="float_left" id="logo">
+                    <img src="images/logo_moon_003.png"/>                    
+                </h1>
+                <h2>PORTFOLIO</h2>
+                <img src="images/pf-circles_002.png">
+                <nav>
+                    <ul>
+                        <li onclick="alert('clicked')">Grapic Design</li>
+                        <li>3D Design</li>
+                        <li>Pakage Design</li>
+                        <li>Poster Design</li>
+                        <li>Album cover Design</li>
+                        <li>
+                            <div id="home">
+                                    <a href="index_moon.html">
+                                        <img src="images/pf-home icon_002.png"/>
+                                    </a>
+                            </div>
+                        </li>
+                        <div class="clear"></div>
+                    </ul>
+                </nav>
+            </header>
+
+            <div id="content">
+                    <div class="card c_gd">
+                    <div class="image_part">
+                    <img src="images/pf_grapic_001.png" alt="grapic design : Form and Color">
+                    <div>Grapic Design</div>
+                    </div>
+                    <div class="info_part">
+                        <h3>Form and Color</h3>
+                        <div class="date">October 2019</div>
+                        <div class="long_line"></div>
+                        <p>
+                                Form, Color라는 단어를 주제로 작업했습니다.<br>
+                                Photoshop을 기반으로 작업을 했고,<br> 
+                                시원시원한 곡선과 직선을 사용했습니다.<br>
+                                뒷 배경은 검은 비닐봉지를 스캔한 뒤,<br>
+                                투명도를 설정해서 질감을 주었습니다.
+                        </p>
+                        <div class="long_line"></div><br>
+                        <div>Read On →</div>
+                        </div>
+                    </div>
+                    <div class="card c_gd">
+                    <div class="image_part">
+                    <img src="images/pf_grapic_002.png" alt="grapic design : Texture">
+                    <div>Grapic Design</div>
+                    </div>
+                    <div class="info_part">
+                        <h3>Texture</h3>
+                        <div class="date">October 2019</div>
+                        <div class="long_line"></div>
+                        <p>
+                                Texture라는 단어를 주제로 작업했습니다.<br>
+                                Photoshop을 기반으로 작업을 했고,<br> 
+                                벽, 종이 등 여러가지 질감을 사용했습니다.<br>
+                                Black과 White 컬러를 통해 절제된 느낌을 주려했습니다.
+                        </p>
+                        <div class="long_line"></div><br>
+                        <div>Read On →</div>
+                        </div>
+                    </div>
+                    <div class="card c_3d">
+                    <div class="image_part">
+                    <img src="images/pf_3D_001.png" alt="3D design : Character statue">
+                    <div>3D Design</div>
+                    </div>
+                    <div class="info_part">
+                        <h3>Character statue</h3>
+                        <div class="date">November 2019</div>
+                        <div class="long_line"></div>
+                        <p>
+                                시그니쳐 캐릭터인 '하트뚠뚠'이로 조각상을 만들었습니다.<br>
+                                3D Maxs를 기반으로 작업을 했고,<br> 
+                                질감 연출과 조명 연출을 통해 자연스러운 느낌을 주었습니다.
+                        </p>
+                        <div class="long_line"></div><br>
+                        <div>Read On →</div>
+                        </div>
+                    </div>
+                    <div class="card c_3d">
+                    <div class="image_part">
+                    <img src="images/pf_3D_002.png" alt="3D design : Room Design">
+                    <div>3D Design</div>
+                    </div>
+                    <div class="info_part">
+                        <h3>Room Design</h3>
+                        <div class="date">November 2019</div>
+                        <div class="long_line"></div>
+                        <p>
+                                공간을 만들고 가구, 도자기, 액자 등으로 꾸며보았습니다.<br>
+                                3D Maxs를 기반으로 작업을 했고,<br> 
+                                질감 연출과 조명 연출을 통해 자연스러운 느낌을 주었습니다.
+                        </p>
+                        <div class="long_line"></div><br>
+                        <div>Read On →</div>
+                        </div>
+                    </div>
+                    <div class="card c_pkd">
+                    <div class="image_part">
+                    <img src="images/pf_pakage_001.png" alt="Pakage design : Mood Lamp pakage">
+                    <div>Pakage Design</div>
+                    </div>
+                    <div class="info_part">
+                        <h3>Mood Lamp pakage</h3>
+                        <div class="date">November 2019</div>
+                        <div class="long_line"></div>
+                        <p>
+                                무드등을 담을 수 있는 패키지를 작업했습니다.<br>
+                                Photoshop과 Illustrator를 기반으로 작업을 했고,<br> 
+                                무드등의 캐릭터들을 통해 아기자기한 귀여움과 감성을 더했습니다.
+                        </p>
+                        <div class="long_line"></div><br>
+                        <div>Read On →</div>
+                        </div>
+                    </div>
+                    <div class="card c_ptd">
+                    <div class="image_part">
+                    <img src="images/pf_poster_001.png" alt="Poster design : Converse Brand Poster">
+                    <div>Poster Design</div>
+                    </div>
+                    <div class="info_part">
+                        <h3>Converse Brand Poster</h3>
+                        <div class="date">November 2019</div>
+                        <div class="long_line"></div>
+                        <p>
+                                '서울나이트(서울의 밤)'이라는 키워드로<br>
+                                Converse와 협업을 한다는 느낌으로 작업했습니다.<br>
+                                Photoshop과 Illustrator를 기반으로 작업을 했고,<br>
+                                서울의 랜드마크들과 서울의 흥겨운 밤 문화를 표현했습니다.                                
+                        </p>
+                        <div class="long_line"></div><br>
+                        <div>Read On →</div>
+                        </div>
+                    </div>
+                    <div class="card c_ptd">
+                    <div class="image_part">
+                    <img src="images/pf_poster_002.png" alt="Poster design : Converse Brand Poster">
+                    <div>Poster Design</div>
+                    </div>
+                    <div class="info_part">
+                        <h3>Converse Brand Poster</h3>
+                        <div class="date">November 2019</div>
+                        <div class="long_line"></div>
+                        <p>
+                                '서울나이트(서울의 밤)'이라는 키워드로<br>
+                                Converse와 협업을 한다는 느낌으로 작업했습니다.<br>
+                                Photoshop과 Illustrator를 기반으로 작업을 했고,<br>
+                                서울의 랜드마크들과 컨버스 신발이 어우러지도록 표현했습니다.                                
+                        </p>
+                        <div class="long_line"></div><br>
+                        <div>Read On →</div>
+                        </div>
+                    </div>
+                    <div class="card c_ad">
+                    <div class="image_part">
+                    <img src="images/pf_album_001.png" alt="Album cover design : Rad Museum-Cloud">
+                    <div>Album cover Design</div>
+                    </div>
+                    <div class="info_part">
+                        <h3>Cloud album cover</h3>
+                        <div class="date">November 2019</div>
+                        <div class="long_line"></div>
+                        <p>
+                                Rad Museum의 Cloud라는 곡의 앨범 커버를 작업했습니다.<br>
+                                Photoshop과 Illustrator를 기반으로 작업을 했고,<br>
+                                몽환적이고 시크한 느낌을 질감과 콜라주,<br>
+                                드로잉을 통해 표현했습니다.                              
+                        </p>
+                        <div class="long_line"></div><br>
+                        <div>Read On →</div>
+                        </div>
+                    </div>
+                    <div class="card c_ad">
+                    <div class="image_part">
+                        <img src="images/pf_album_002.png" alt="Album cover design : Rad Museum-Cloud">
+                        <div>Album cover Design</div>
+                        </div>
+                        <div class="info_part">
+                            <h3>Cloud album cover</h3>
+                            <div class="date">November 2019</div>
+                            <div class="long_line"></div>
+                            <p>
+                                    Rad Museum의 Cloud라는 곡의 앨범 커버를 작업했습니다.<br>
+                                    Photoshop과 Illustrator를 기반으로 작업을 했고,<br>
+                                    몽환적이고 시크한 느낌을 질감과 콜라주,<br>
+                                    드로잉을 통해 표현했습니다.                              
+                            </p>
+                            <div class="long_line"></div><br>
+                            <div>Read On →</div>
+                            </div>
+                    </div>        
+                    <div class="card c_ad">
+                    <div class="image_part">
+                        <img src="images/pf_album_003.png" alt="Album cover design : Rad Museum-Cloud">
+                        <div>Album cover Design</div>
+                        </div>
+                        <div class="info_part">
+                            <h3>Cloud album cover</h3>
+                            <div class="date">November 2019</div>
+                            <div class="long_line"></div>
+                            <p>
+                                    Rad Museum의 Cloud라는 곡의 앨범 커버를 작업했습니다.<br>
+                                    Photoshop과 Illustrator를 기반으로 작업을 했고,<br>
+                                    몽환적이고 꿈을 꾸는 듯한 느낌을 질감과 사진,<br>
+                                    드로잉을 통해 표현했습니다.                              
+                            </p>
+                            <div class="long_line"></div><br>
+                            <div>Read On →</div>
+                            </div>
+                    </div>        
+                    <div class="card c_ad">
+                    <div class="image_part">
+                        <img src="images/pf_album_004.png" alt="Album cover design : Rad Museum-Cloud">
+                        <div>Album cover Design</div>
+                        </div>
+                        <div class="info_part">
+                            <h3>Cloud album cover</h3>
+                            <div class="date">November 2019</div>
+                            <div class="long_line"></div>
+                            <p>
+                                    Rad Museum의 Cloud라는 곡의 앨범 커버를 작업했습니다.<br>
+                                    Photoshop과 Illustrator를 기반으로 작업을 했고,<br>
+                                    몽환적이고 꿈을 꾸는 듯한 느낌을 질감과 사진,<br>
+                                    드로잉을 통해 표현했습니다.                              
+                            </p>
+                            <div class="long_line"></div><br>
+                            <div>Read On →</div>
+                            </div>
+                    </div>        
+                    <div class="clear"></div>          
+                </div>
+
+                <footer>
+                    <img src="images/layout3_icon1.png">
+                    <img src="images/layout3_icon2.png">
+                    <img src="images/layout3_icon3.png">
+                    <img src="images/layout3_icon4.png">
+                    <div class="font_bold">
+                    <div>This website & the Internet Ends hereg</div>
+                    <div>Copyright 2019 MOONNOOMMOON www.MNM0125.com</div>
+                    </div>
+                </footer>
+        </div>        
+    </body>
+</html>
